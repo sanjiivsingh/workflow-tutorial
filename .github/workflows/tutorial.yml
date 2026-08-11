@@ -55,7 +55,7 @@ jobs:
     apply:
         name: Apply Stage
         if: github.ref == 'refs/heads/main'
-        needs: plan
+        needs: [plan , scan]
         runs-on: ubuntu-latest
         defaults:
             run:
