@@ -12,6 +12,8 @@ jobs:
             run:
                 working-directory: test_environment/dev
         steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v7
 
             - name: Step 1
               run: echo "Step 1 of Scan Stage"
@@ -34,6 +36,9 @@ jobs:
             run:
                 working-directory: test_environment/preprod
         steps:
+
+            - name: Checkout Repository
+              uses: actions/checkout@v7
 
             - name: Step 1
               run: |
@@ -61,7 +66,9 @@ jobs:
             run:
                 working-directory: test_module/test_resource1
         steps:
-
+            - name: Checkout Repository
+              uses: actions/checkout@v7
+              
             - name: Step 1
               run: echo "This is step 1 of apply stage"
 
