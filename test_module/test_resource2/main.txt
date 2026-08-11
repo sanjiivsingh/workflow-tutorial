@@ -1,0 +1,1 @@
+This is test_resource2's main.txt
